@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+header, footer { background-color: #000; color: white; text-align: center; padding: 20px; }
+
+.menu { background-color: #333; }
+.menu ul { display: flex; justify-content: center; gap: 20px; list-style: none; margin: 0; padding: 15px; }
+.menu a { color: white; text-decoration: none; font-weight: bold; }
+
+.container { display: flex; max-width: 1000px; margin: 20px auto; gap: 20px; padding: 0 10px; }
+
+.coluna-principal { flex: 2; display: flex; flex-direction: column; gap: 20px; }
+.noticia { background-color: white; padding: 15px; border: 1px solid #ddd; }
+.noticia img { max-width: 100%; height: auto; }
+
+.barra-lateral { flex: 1; background-color: white; padding: 15px; border: 1px solid #ddd; }
+.item-lateral { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.item-lateral a { text-decoration: none; color: #333; }
+
+@media (max-width: 700px) {
+    .container { flex-direction: column; }
+    .menu ul { flex-direction: column; align-items: center; }
+}
