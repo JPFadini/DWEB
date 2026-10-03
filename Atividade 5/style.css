@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.caixa-responsiva {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    flex-shrink: 0; 
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 420px) {
+    .caixa-responsiva { background-color: #1a3644; }
+    .caixa-responsiva h2::before { content: "Cinza"; }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa-responsiva { background-color: #d88939; }
+    .caixa-responsiva h2::before { content: "Laranja"; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa-responsiva { background-color: #e500d0; }
+    .caixa-responsiva h2::before { content: "Magenta"; }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa-responsiva { background-color: #d15655; }
+    .caixa-responsiva h2::before { content: "Vermelho"; }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa-responsiva { background-color: #6c4b9b; }
+    .caixa-responsiva h2::before { content: "Roxo"; }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa-responsiva { background-color: #ecc05b; }
+    .caixa-responsiva h2::before { content: "Amarelo"; }
+}
+
+@media (min-width: 1921px) {
+    .caixa-responsiva { background-color: #27ae60; }
+    .caixa-responsiva h2::before { content: "Verde"; }
+}
